@@ -1,13 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Sail&display=swap");
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  background-color: rgb(230, 226, 226);
+  font-family: "Sail", system-ui;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.title {
+  /* border: 2px solid red; */
+  color: rgb(96, 0, 198);
+  font-size: 50px;
+  text-align: center;
+  font-family: serif;
+  font-family: "Sail", system-ui;
+}
+.container {
+  /* border: 2px solid red; */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-evenly;
+ 
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid blue; */
+  width: 300px;
+  /* height: 400px; */
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 4px 4px 30px black;
+}
+.imgTitle {
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+}
+
+.img-container {
+  /* border: 2px solid blue; */
+  width: 300px;
+  height: 400px;
+  overflow: hidden;
+}
+
+/* .container .item {
+  border: 2px solid blue;
+  width: 300px;
+  height: 400px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+} */
+
+/* .container .item p {
+  font-size: 20px;
+  position: absolute;
+  bottom: 0;
+}
+ */
+
+.container .item .img-container img {
+  width: 100%;
+  height: 100%;
+  transform: translate();
+  transition: 0.4s;
+  object-fit: cover;
+}
+img:hover {
+  transform: scale(1.25);
 }
