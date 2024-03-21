@@ -4,7 +4,6 @@ This application is developed using React to create an image gallery. Users can 
 
 ## Project Link
 
-1. https://image-gallery-app-ten.vercel.app/
 
 ## Usage
 
